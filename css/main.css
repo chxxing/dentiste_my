@@ -13,7 +13,7 @@
 
 .Header .TopBanner {
     border-bottom: 1px solid #ddd;
-    font-size: 13.5px;
+    font-size: 13.1px;
 }
 
 .Header .TopBanner .container {
@@ -25,7 +25,7 @@
 .Header .TopBanner ul {
     display: flex;
     gap: 25px;
-    line-height: 45px;
+    line-height: 40px;
 }
 
 .Header .TopBanner a {
@@ -41,7 +41,7 @@
     outline: none;
     border: none;
     border-radius: 30px;
-    padding: 5px 15px;
+    padding: 4px 15px 5px;
 }
 
 #SearchForm input[type="text"]::placeholder {
@@ -57,6 +57,7 @@
     outline: none;
     border: none;
     margin: 0 5px 0 0;
+    cursor: pointer;
 }
 
 .Header .Menu .container {
@@ -95,17 +96,19 @@
 
 .Header .Gnb li .smenu {
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
+    width: 150px;
     border: 1px solid #ddd;
+    padding: 5px 0;
+    background: rgba(255, 255, 255, 0.8);
     line-height: 30px;
     font-size: 15px;
     font-weight: 400;
     text-align: center;
-    transition: 0.2s;
     opacity: 0;
+    z-index: 999;
 }
 
 .Header .Gnb li:hover .smenu {
@@ -113,3 +116,37 @@
 }
 
 .MainVisual {}
+
+.MainVisual .MainSlider figure {
+    height: calc(100vh - 141px);
+}
+
+.MainVisual .slide01 {
+    background: url(../img/main01.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .slide02 {
+    background: url(../img/main02.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .slide03 {
+    background: url(../img/main03.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .swiper-pagination {
+    bottom: 50px;
+}
+
+.MainVisual .swiper-pagination-bullet {
+    width: 80px;
+    height: 8px;
+    border: 1px solid #017552;
+    border-radius: 0;
+    background: transparent;
+    opacity: 1;
+}
+
+.MainVisual .swiper-pagination-bullet-active {
+    border: 1px solid #017552;
+    background: #017552;
+}
