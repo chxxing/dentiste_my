@@ -1,0 +1,115 @@
+/* * {
+    outline: 1px solid #00f;
+} */
+
+.Wrap {
+    letter-spacing: -0.025em;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Header .TopBanner {
+    border-bottom: 1px solid #ddd;
+    font-size: 13.5px;
+}
+
+.Header .TopBanner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header .TopBanner ul {
+    display: flex;
+    gap: 25px;
+    line-height: 45px;
+}
+
+.Header .TopBanner a {
+    display: inline-block;
+}
+
+#SearchForm .box {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+#SearchForm input[type="text"] {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+#SearchForm input[type="text"]::placeholder {
+    color: #999;
+}
+
+#SearchForm input[type="text"]:focus::placeholder {
+    opacity: 0;
+}
+
+#SearchForm button {
+    background: transparent;
+    outline: none;
+    border: none;
+    margin: 0 5px 0 0;
+}
+
+.Header .Menu .container {
+    display: flex;
+    line-height: 100px;
+}
+
+.Header h1 {
+    font-size: 0;
+}
+
+.Header .Gnb {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.Header .Gnb>ul {
+    display: flex;
+    gap: 60px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.Header .Gnb a {
+    display: inline-block;
+}
+
+.Header .Gnb a:hover {
+    color: #017552;
+}
+
+.Header .Gnb li {
+    position: relative;
+}
+
+.Header .Gnb li .smenu {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    border: 1px solid #ddd;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.Header .Gnb li:hover .smenu {
+    opacity: 1;
+}
+
+.MainVisual {}
