@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENTISTE - chxxing</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header class="Header">
+            <div class="TopBanner">
+                <div class="container">
+                    <ul>
+                        <li><a href="#!">로그인</i></a></li>
+                        <li><a href="#!">회원가입</a></li>
+                        <li><a href="#!">마이페이지</a></li>
+                        <li><a href="#!">장바구니</a></li>
+                    </ul>
+                    <div id="SearchForm">
+                        <form action="javascript:searchAction()">
+                            <div class="box">
+                                <input type="text" id="input" placeholder="#선물세트 #이달의특가">
+                                <button><i class="xi-search"></i></button>
+                            </div>
+                        </form>
+                        <script>
+                            function searchAction() {
+                                var searchValue = document.getElementById('input').value;
+                                if (searchValue.length > 1) {
+                                    alert(searchValue)
+                                }
+                                else {
+                                    alert('검색어를 입력해주세요.')
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="Menu">
+                <div class="container">
+                    <nav class="Gnb">
+                        <ul>
+                            <li>
+                                <a href="">BRAND</a>
+                                <ul class="smenu">
+                                    <li><a href="">실란트로</a></li>
+                                    <li><a href="">덴티스테 이야기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">PRODUCT</a>
+                                <ul class="smenu">
+                                    <li><a href="">카림라시드 에디션</a></li>
+                                    <li><a href="">나이트타임 치약</a></li>
+                                    <li><a href="">구강청결제</a></li>
+                                    <li><a href="">구강용품</a></li>
+                                    <li><a href="">여행용세트</a></li>
+                                    <li><a href="">선물세트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW</a></li>
+                        </ul>
+                        <h1>
+                            <a href="/">
+                                <img src="./img/logo.jpg" alt="">
+                            </a>
+                        </h1>
+                        <ul>
+                            <li>
+                                <a href="">EVENT</a>
+                                <ul class="smenu">
+                                    <li><a href="">진행중 이벤트</a></li>
+                                    <li><a href="">종료된 이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">CONTENTS</a>
+                                <ul class="smenu">
+                                    <li><a href="">디지털 캠페인</a></li>
+                                    <li><a href="">프로모션</a></li>
+                                    <li><a href="">홍보/광고영상</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">CS CENTER</a>
+                                <ul class="smenu">
+                                    <li><a href="">공지사항</a></li>
+                                    <li><a href="">사용후기</a></li>
+                                    <li><a href="">1:1문의</a></li>
+                                    <li><a href="">대량주문 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- 메인슬라이더 -->
+            <section class="MainVisual">
+                <div class="MainSlider swiper">
+                    <div class="swiper-wrapper">
+                        <figure class="swiper-slide slide01">
+                            <div class="inner">
+                                <span>93% 입냄새 개선</span>
+                                <h2>덴티스테 플러스 화이트 치약</h2>
+                                <p>아침까지 이어지는 상쾌함</p>
+                                <a href="#!">자세히보기 <i class="xi-angle-right-min"></i></a>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide slide02">
+                            <div class="inner">
+                                <span>99.9% 항균력 입증</span>
+                                <h2>덴티스테 내츄럴 오랄린스</h2>
+                                <p>상쾌함이 다른 프리미엄 가글</p>
+                                <a href="#!">자세히보기 <i class="xi-angle-right-min"></i></a>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide slide03">
+                            <div class="inner">
+                                <span>21-FREE Ingredient</span>
+                                <h2>덴티스테 후레쉬 브레스 스프레이</h2>
+                                <p>언제 어디서나 함께하는 상쾌함</p>
+                                <a href="#!">자세히보기 <i class="xi-angle-right-min"></i></a>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="Product">
+                <h2>PRODUCT</h2>
+                <div class="ProductSlider swiper">
+                    <div class="swiper-wrapper">
+                        <figure class="swiper-slide itm01">
+                            <a href="#!">
+                                <img src="./img/product01.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 마일드 치약</p>
+                                <span>6,300원</span>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide itm02">
+                            <a href="#!">
+                                <img src="./img/product02.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 플러스화이트 치약 (튜브형)</p>
+                                <span>5,900원</span>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide itm03">
+                            <a href="#!">
+                                <img src="./img/product03.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 센서티브케어 치약</p>
+                                <span>7,300원</span>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide itm04">
+                            <a href="#!">
+                                <img src="./img/product04.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 후레쉬 브레스스프레이 15ml</p>
+                                <span>7,900원</span>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide itm05">
+                            <a href="#!">
+                                <img src="./img/product05.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 내츄럴 오랄린스</p>
+                                <span>4,800원</span>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide itm06">
+                            <a href="#!">
+                                <img src="./img/product06.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 센서티브 칫솔</p>
+                                <span>4,400원</span>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide itm07">
+                            <a href="#!">
+                                <img src="./img/product07.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 혀클리너</p>
+                                <span>4,900원</span>
+                            </div>
+                        </figure>
+                        <figure class="swiper-slide itm08">
+                            <a href="#!">
+                                <img src="./img/product08.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <p>덴티스테 치실 (15m/50m)</p>
+                                <span>2,500원</span>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="swiper-button-next">
+                    </div>
+                    <div class="swiper-button-prev">
+                    </div>
+                </div>
+            </section>
+            <section class="Natural">
+                <h2>NATURAL</h2>
+                <div class="container">
+                    <div class="natural01">
+                        <figure>
+                            <img src="./img/nat01.jpg" alt="">
+                        </figure>
+                        <div class="inner">
+                            <h3>프리미엄 토탈 오랄케어 브랜드</h3>
+                            <p>덴티스테(DENTISTE)는 프랑스어로 ‘치과의사’라는 뜻으로<br />수면 중 발생하는 입 냄새(구취)의 원인을 감소시켜<br />
+                                상쾌한 아침을 열어주는 새로운 컨셉의 나이트타임 치약입니다.</p>
+                            <p>출시 이후 전 세계 남녀노소 모두가 사용하는 기능성
+                                치약으로,<br />국내에는 치약뿐만 아니라 구강청결제, 칫솔, 치실 등<br />
+                                깨끗하고 상쾌한 구강 환경을 유지해주는 다양한 제품을 통해<br />프리미엄 토탈 오랄 케어 솔루션을 제공합니다.</p>
+                        </div>
+                    </div>
+                    <div class="natural02">
+                        <div class="inner">
+                            <h3>허브, 자일리톨, 비타민C</h3>
+                            <p>덴티스테는 세이지, 캐모마일, 회향, 계피, 감초 등 자연 유래 성분과<br />정향, 페퍼민트, 유칼립투스 등의 허브, 자일리톨, 비타민C가
+                                함유되어<br />충치
+                                예방 및
+                                구취 개선에 탁월합니다.
+                            </p>
+                            <p>
+                                지나치게 자극적이지 않고<br />톡 쏘는 맛과 향을 대신하여 은은한 향과 맛을 전해<br />기분 좋은 양치질을 경험하실 수 있습니다.
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="./img/nat02.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="Sns">
+                <h2>#DENTISTE</h2>
+                <div class="container">
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+</body>
+
+</html>
