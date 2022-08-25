@@ -2,8 +2,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const MainSlider = new Swiper('.MainSlider', {
         loop: true,
+        effect: "fade",
         autoplay: {
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
         },
         navigation: {

@@ -118,6 +118,7 @@
 .MainVisual {}
 
 .MainVisual .MainSlider figure {
+    position: relative;
     height: calc(100vh - 141px);
 }
 
@@ -138,15 +139,75 @@
 }
 
 .MainVisual .swiper-pagination-bullet {
-    width: 80px;
-    height: 8px;
+    width: 40px;
+    height: 7px;
     border: 1px solid #017552;
     border-radius: 0;
     background: transparent;
     opacity: 1;
+    transition: width 1s;
 }
 
 .MainVisual .swiper-pagination-bullet-active {
+    width: 70px;
     border: 1px solid #017552;
     background: #017552;
+}
+
+.MainVisual .inner {
+    position: absolute;
+    top: 50%;
+    right: calc((100% - 1200px) / 2);
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.MainVisual .inner h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-shadow: 0 0 1px #fff;
+}
+
+.MainVisual .inner p {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 45px 0;
+    text-shadow: 0 0 1px #fff;
+}
+
+.MainVisual .inner span {
+    display: block;
+    font-size: 17px;
+    margin: 0 0 25px 0;
+}
+
+.MainVisual .inner a {
+    display: inline-block;
+    font-size: 15px;
+    border: 1px solid #999;
+    padding: 10px 15px 10px 20px;
+    transition: 0.5s;
+}
+
+.MainVisual .slide02 a {
+    border: 1px solid #333;
+}
+
+.MainVisual .inner a:hover {
+    border: 1px solid #017552;
+    background: #017552;
+    color: #fff;
+}
+
+.Product {
+    padding: 120px 0;
+}
+
+.Product h2 {
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.15em;
+    margin: 0 0 30px 0;
 }
