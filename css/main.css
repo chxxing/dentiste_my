@@ -205,9 +205,157 @@
 }
 
 .Product h2 {
-    font-size: 27px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 700;
     text-align: center;
     letter-spacing: 0.15em;
+    margin: 0 0 50px 0;
+}
+
+.Product .ProductSlider figure {
+    position: relative;
+    height: 547px;
+
+}
+
+.Product .swiper-slide {
+    transform: scaleY(0.9);
+    opacity: 0.4;
+    transition: all 0.5s;
+}
+
+.Product .swiper-slide-active,
+.Product .swiper-slide-next,
+.Product .swiper-slide-prev {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.Product .swiper-slide .inner {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.Product .swiper-slide-active .inner,
+.Product .swiper-slide-next .inner,
+.Product .swiper-slide-prev .inner {
+    opacity: 1;
+}
+
+.Product .swiper-slide img {
     margin: 0 0 30px 0;
+}
+
+.ProductSlider .inner {
+    text-align: center;
+}
+
+.ProductSlider .inner p {
+    font-size: 17px;
+    margin: 0 0 10px 0;
+}
+
+.ProductSlider .inner span {
+    display: block;
+    font-size: 15px;
+}
+
+.Product .swiper-button-next::after {
+    content: '\e907';
+    font-family: 'xeicon';
+}
+
+.Product .swiper-button-prev::after {
+    content: '\e906';
+    font-family: 'xeicon';
+}
+
+.Product .swiper-button-next {
+    right: 30px;
+    left: auto;
+    background: #fff;
+    border-radius: 50%;
+    padding: 30px;
+    color: #333;
+    opacity: 0.6;
+}
+
+.Product .swiper-button-next:hover {
+    color: #017552;
+    opacity: 1;
+}
+
+.Product .swiper-button-prev {
+    right: auto;
+    left: 30px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 30px;
+    color: #333;
+    opacity: 0.6;
+}
+
+.Product .swiper-button-prev:hover {
+    color: #017552;
+    opacity: 1;
+}
+
+.Natural {
+    background: url(../img/background.jpg) no-repeat fixed center center/cover;
+    padding: 120px 0;
+}
+
+.Natural h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.15em;
+    margin: 0 0 50px 0;
+}
+
+.Natural .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Natural .container>div {
+    display: flex;
+}
+
+.Natural .inner {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+.Natural .inner h3 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.Natural .inner h3::after {
+    content: "";
+    display: block;
+    margin: 25px auto 40px;
+    width: 100px;
+    height: 2px;
+    background: #017552;
+}
+
+.Natural .inner p {
+    line-height: 1.35;
+    margin: 0 0 10px 0;
+}
+
+.Sns {
+    padding: 120px 0;
+}
+
+.Sns h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.15em;
+    margin: 0 0 50px 0;
 }
