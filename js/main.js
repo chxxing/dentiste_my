@@ -24,9 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
         },
     })
 
-    AOS.init({
-        duration: 600,
-        offset: 140,
-        anchorPlacement: 'top-bottom',
-    });
-})
+});
+
+AOS.init({
+    duration: 600,
+    offset: 140,
+    anchorPlacement: 'top-bottom',
+});
