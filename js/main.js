@@ -23,4 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
             prevEl: ".swiper-button-prev",
         },
     })
+
+    AOS.init({
+        duration: 600,
+        offset: 140,
+        anchorPlacement: 'top-bottom',
+    });
 })
