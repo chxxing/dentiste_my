@@ -4,6 +4,8 @@
 
 .Wrap {
     letter-spacing: -0.025em;
+    min-width: 1900px;
+    overflow: hidden;
 }
 
 .container {
