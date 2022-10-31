@@ -11,10 +11,11 @@ window.addEventListener('DOMContentLoaded', () => {
             el: ".swiper-pagination",
             clickable: true,
         },
-    })
+    });
 
     const ProductSlider = new Swiper('.ProductSlider', {
         loop: true,
+        loopFillGroupWithBlank: true,
         slidesPerView: 5,
         spaceBetween: 30,
         centeredSlides: true,
@@ -22,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-    })
+    });
 
     AOS.init({
         duration: 600,
