@@ -1,4 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.mbtn').addEventListener('click', (e) => {
+        const GNB = document.querySelector('.Gnb');
+        const BTN = document.querySelector('.xi-bars');
+        e.currentTarget.classList.toggle('on');
+        BTN.classList.toggle('xi-close');
+        GNB.classList.toggle('on');
+    })
+
 
     const MainSlider = new Swiper('.MainSlider', {
         loop: true,
